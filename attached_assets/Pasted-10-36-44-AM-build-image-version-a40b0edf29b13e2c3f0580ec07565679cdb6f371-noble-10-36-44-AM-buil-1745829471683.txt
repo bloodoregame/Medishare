@@ -1,0 +1,132 @@
+10:36:44 AM: build-image version: a40b0edf29b13e2c3f0580ec07565679cdb6f371 (noble)
+10:36:44 AM: buildbot version: a40b0edf29b13e2c3f0580ec07565679cdb6f371
+10:36:44 AM: Fetching cached dependencies
+10:36:44 AM: Failed to fetch cache, continuing with build
+10:36:44 AM: Starting to prepare the repo for build
+10:36:44 AM: No cached dependencies found. Cloning fresh repo
+10:36:44 AM: git clone --filter=blob:none https://github.com/bloodoregame/Medishare
+10:36:45 AM: Preparing Git Reference refs/heads/master
+10:36:47 AM: Starting to install dependencies
+10:36:47 AM: Python version set to 3.13.3
+10:36:47 AM: Ruby version set to 2.7.2
+10:36:47 AM: mise go@1.19         install
+10:36:47 AM: mise go@1.19         download go1.19.linux-amd64.tar.gz
+10:36:49 AM: mise go@1.19         checksum go1.19.linux-amd64.tar.gz
+10:36:49 AM: mise go@1.19         extract go1.19.linux-amd64.tar.gz
+10:36:52 AM: mise go@1.19         go version
+10:36:52 AM: mise go@1.19         go version go1.19 linux/amd64
+10:36:52 AM: mise go@1.19       ✓ installed
+10:36:52 AM: Go version set to 1.19
+10:36:53 AM: Using PHP version 8.3
+10:36:54 AM: v22.15.0 is already installed.
+10:36:55 AM: Now using node v22.15.0 (npm v10.9.2)
+10:36:55 AM: Enabling Node.js Corepack
+10:36:55 AM: Started restoring cached build plugins
+10:36:55 AM: Finished restoring cached build plugins
+10:36:55 AM: Started restoring cached corepack dependencies
+10:36:55 AM: Finished restoring cached corepack dependencies
+10:36:55 AM: No npm workspaces detected
+10:36:55 AM: Started restoring cached node modules
+10:36:55 AM: Finished restoring cached node modules
+10:36:55 AM: Installing npm packages using npm version 10.9.2
+10:36:57 AM: npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+10:36:57 AM: npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+10:37:01 AM: added 497 packages, and audited 498 packages in 6s
+10:37:01 AM: 65 packages are looking for funding
+10:37:01 AM:   run `npm fund` for details
+10:37:01 AM: 7 moderate severity vulnerabilities
+10:37:01 AM: To address issues that do not require attention, run:
+10:37:01 AM:   npm audit fix
+10:37:01 AM: To address all issues (including breaking changes), run:
+10:37:01 AM:   npm audit fix --force
+10:37:01 AM: Run `npm audit` for details.
+10:37:01 AM: npm packages installed
+10:37:02 AM: Successfully installed dependencies
+10:37:02 AM: Starting build script
+10:37:03 AM: Detected 1 framework(s)
+10:37:03 AM: "vite" at version "5.4.14"
+10:37:03 AM: Section completed: initializing
+10:37:04 AM: ​
+10:37:04 AM: Netlify Build                                                 
+10:37:04 AM: ────────────────────────────────────────────────────────────────
+10:37:04 AM: ​
+10:37:04 AM: ❯ Version
+10:37:04 AM:   @netlify/build 32.1.0
+10:37:04 AM: ​
+10:37:04 AM: ❯ Flags
+10:37:04 AM:   accountId: 6804b01994fa97a635daaa3d
+10:37:04 AM:   baseRelDir: true
+10:37:04 AM:   buildId: 680f3dd1613946972ef33323
+10:37:04 AM:   deployId: 680f3dd1613946972ef33325
+10:37:05 AM: ​
+10:37:05 AM: ❯ Current directory
+10:37:05 AM:   /opt/build/repo
+10:37:05 AM: ​
+10:37:05 AM: ❯ Config file
+10:37:05 AM:   /opt/build/repo/netlify.toml
+10:37:05 AM: ​
+10:37:05 AM: ❯ Context
+10:37:05 AM:   production
+10:37:05 AM: ​
+10:37:05 AM: build.command from netlify.toml                               
+10:37:05 AM: ────────────────────────────────────────────────────────────────
+10:37:05 AM: ​
+10:37:05 AM: $ ./build-netlify.sh
+10:37:05 AM: > rest-express@1.0.0 build
+10:37:05 AM: > vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+10:37:05 AM: vite v5.4.14 building for production...
+10:37:05 AM: transforming...
+10:37:05 AM: Browserslist: browsers data (caniuse-lite) is 6 months old. Please run:
+10:37:05 AM:   npx update-browserslist-db@latest
+10:37:05 AM:   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+10:37:08 AM: ✓ 1735 modules transformed.
+10:37:08 AM: rendering chunks...
+10:37:08 AM: computing gzip size...
+10:37:08 AM: ../dist/public/index.html                   0.63 kB │ gzip:   0.38 kB
+10:37:08 AM: ../dist/public/assets/index-Dd6cDfj6.css   64.49 kB │ gzip:  11.31 kB
+10:37:08 AM: ../dist/public/assets/index-CbRc3gOR.js   388.45 kB │ gzip: 121.85 kB
+10:37:08 AM: ✓ built in 2.95s
+10:37:08 AM:   dist/index.js  18.8kb
+10:37:08 AM: ⚡ Done in 13ms
+10:37:08 AM: Build pour Netlify terminé avec succès !
+10:37:08 AM: ​
+10:37:08 AM: (build.command completed in 3.3s)
+10:37:08 AM: ​
+10:37:08 AM: Functions bundling                                            
+10:37:08 AM: ────────────────────────────────────────────────────────────────
+10:37:08 AM: ​
+10:37:08 AM: Packaging Functions from dist/.netlify/functions directory:
+10:37:08 AM:  - api.js
+10:37:08 AM: ​
+10:37:08 AM: ​
+10:37:08 AM: Dependencies installation error                               
+10:37:08 AM: ────────────────────────────────────────────────────────────────
+10:37:08 AM: ​
+10:37:08 AM:   Error message
+10:37:08 AM:   A Netlify Function failed to require one of its dependencies.
+10:37:08 AM:   Please make sure it is present in the site's top-level "package.json".
+​
+10:37:08 AM:   In file "/opt/build/repo/dist/.netlify/functions/api.js"
+10:37:08 AM:   Cannot find module 'cors'
+10:37:08 AM:   Require stack:
+10:37:08 AM:   - /opt/buildhome/node-deps/node_modules/@netlify/zip-it-and-ship-it/dist/runtimes/node/bundlers/zisi/resolve.js
+10:37:08 AM: ​
+10:37:08 AM:   Resolved config
+10:37:08 AM:   build:
+10:37:08 AM:     command: ./build-netlify.sh
+10:37:08 AM:     commandOrigin: config
+10:37:08 AM:     publish: /opt/build/repo/dist
+10:37:08 AM:     publishOrigin: config
+10:37:08 AM:   functionsDirectory: /opt/build/repo/dist/.netlify/functions
+10:37:08 AM:   redirects:
+10:37:08 AM:     - from: /api/*
+      status: 200
+      to: /.netlify/functions/api/:splat
+    - from: /*
+      status: 200
+      to: /index.html
+  redirectsOrigin: config
+10:37:08 AM: Build failed due to a user error: Build script returned non-zero exit code: 2
+10:37:08 AM: Failing build: Failed to build site
+10:37:09 AM: Finished processing build request in 24.766s
+10:37:09 AM: Failed during stage 'building site': Build script returned non-zero exit code: 2
